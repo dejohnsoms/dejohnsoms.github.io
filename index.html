@@ -1,48 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alison Certification Award</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alison Certification Award</title>
 
-     <link rel="icon" href="./img/Alison.png" type="image/png">
-    <style>
-        /* CSS for centering and styling */
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+   <link rel="icon" href="./img/Alison.png" type="image/png">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        #certificate {
-            display: block;
-            max-width: 80%;
-            max-height: 80%;
-            border: 2px solid #333;
-            margin-top: 20px;
-        }
+    /* Body Styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+      padding: 20px;
+    }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    /* Main Certificate Container */
+    .certificate-container {
+      width: 100%;
+      max-width: 600px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    /* Header Section Styling */
+    .certificate-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .certificate-header h1 {
+      font-size: 1.8em;
+      color: #0056b3;
+    }
+
+    /* Content Styling */
+    .certificate-content {
+      font-size: 1em;
+    }
+    .certificate-content p {
+      margin-bottom: 10px;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+
+    /* Certificate Image Styling */
+    .certificate-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .certificate-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Score Section */
+    .score-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: #e9f7fc;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .score-box {
+      width: 48%;
+      text-align: center;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .score-box h2 {
+      font-size: 2em;
+      color: #007bff;
+    }
+
+    .score-box p {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-<!--     <button onclick="showCertificate()">View Certificate</button> -->
-    <img id="certificate" src="./img/cert.jpg" alt="Certificate Image">
+  <div class="certificate-container">
+    <!-- Header Section -->
+    <div class="certificate-header">
+      <h1>Johnson Igwe</h1>
+    </div>
 
-<!--     <script>
-        function showCertificate() {
-            document.getElementById("certificate").style.display = "block";
-        }
-    </script> -->
+    <!-- Certificate Information -->
+    <div class="certificate-content">
+      <p><span class="highlight">Alison ID:</span> 2223-40063983</p>
+      <p><span class="highlight">Course Completed:</span> Diploma in Graphics Design</p>
+      <p><span class="highlight">Date Of Completion:</span> 9th August 2024</p>
+      <p><span class="highlight">Email:</span> johnsonigwe83@gmail.com</p>
+      <p><span class="highlight">Total Study Time:</span> 79h 28m</p>
+    </div>
+
+    <!-- Certificate Image Section -->
+    <div class="certificate-image">
+      <img src="./img/cert.jpg" alt="Certificate Image">
+    </div>
+
+    <!-- Score and CPD Hours Section -->
+    <div class="score-container">
+      <div class="score-box">
+        <h2>97%</h2>
+        <p>Final Assessment Score</p>
+        <p>Alison courses require at least 80% to pass the final assessment</p>
+      </div>
+      <div class="score-box">
+        <h2>78</h2>
+        <p>CPD Hours Completed</p>
+        <p>CPD-approved learning hours completed through this course</p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
