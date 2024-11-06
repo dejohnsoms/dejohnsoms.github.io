@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Certificate</title>
+    <style>
+        /* CSS for centering and styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #certificate {
+            display: none;
+            max-width: 80%;
+            max-height: 80%;
+            border: 2px solid #333;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showCertificate()">View Certificate</button>
+    <img id="certificate" src="path-to-your-image.jpg" alt="Certificate Image">
+
+    <script>
+        function showCertificate() {
+            document.getElementById("certificate").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
